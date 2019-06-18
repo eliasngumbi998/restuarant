@@ -6,23 +6,23 @@ app.config(function($stateProvider, $urlRouterProvider) {
     $stateProvider
         .state('home', {
             url: '/home',
-            templateUrl: 'partials/home.html',
+            templateUrl: 'menu/home.html',
             controller: 'homeCtrl'
         })
-        .state('add', {
-            url: '/add',
-            templateUrl: 'partials/add.html',
-            controller: 'addCtrl'
+        .state('salad', {
+            url: '/expand',
+            templateUrl: 'choices/checkin.html',
+            controller: 'checkouCtrl'
         })
-        .state('edit', {
-            url: '/edit/{member:json}',
-            templateUrl: 'partials/edit.html',
-            controller: 'editCtrl'
+        .state('empree', {
+            url: '/box/{empree:json}',
+            templateUrl: 'choices/checkin.html',
+            controller: 'checkoutCtrl'
         })
-        .state('delete', {
-            url: '/delete/{member:json}',
-            templateUrl: 'partials/delete.html',
-            controller: 'deleteCtrl'
+        .state('soup', {
+            url: '/box/{choices:json}',
+            templateUrl: 'choices/checkin.html',
+            controller: 'checkoutCtrl'
         })
  
 });
